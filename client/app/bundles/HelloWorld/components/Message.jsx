@@ -6,5 +6,4 @@ const Message = (props) => (
 	</div>
 )
 
-console.log(Message)
 export default Message;
