@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 import * as actions from '../actions/todoActionCreators';
 
 function mapStateToProps(state) {
-  console.log("here")
+  console.log("app container")
   console.log(state)
   return state
 }

@@ -11,16 +11,16 @@ import todoReducer from '../reducers/todoReducer'
 // export default function configureStore(initialState = { todos: [] }) {
 //   return finalCreateStore(reducer, initialState)
 // }
-let initialState = {
-  todos: [{
+// let initialState = {
+  
+// }
+
+const configureStore = (initialState) => (
+  createStore(todoReducer, { todos: [{
     id: 0,
     completed: false,
     text: 'Initial todo for demo purposes'
-  }]
-}
-
-const configureStore = (initialState) => (
-  createStore(todoReducer, initialState)
+  }] })
 );
 
 export default configureStore;
