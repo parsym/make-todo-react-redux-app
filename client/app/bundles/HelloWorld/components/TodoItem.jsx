@@ -1,19 +1,25 @@
 import React, { Component } from 'react'
 
-const TodoItem = (props) => (
-  // handleComplete() {
-  //   this.props.actions.completeTodo(this.props.todo.id)
-  // }
+class TodoItem extends React.PureComponent {
 
-  // handleDelete() {
-  //   this.props.actions.deleteTodo(this.props.todo.id)
-  // }
+  handleComplete() {
+    this.props.actions.completeTodo(this.props.todo.id)
+  }
 
-  <li>
-    <div>{this.props.todo.text}</div>
-    <button onClick={this.props.actions.completeTodo(this.props.todo.id)}>Mark as completed</button>
-    <button onClick={this.props.actions.deleteTodo(this.props.todo.id)}>Delete todo</button>
-  </li>
-);
+  handleDelete() {
+    this.props.actions.deleteTodo(this.props.todo.id)
+  }
+
+  render() {
+    return (
+      <li>
+        <div>{this.props.todo.text}</div>
+        <button onClick={this.handleComplete.bind(this)}>Mark as completed</button>
+        <button onClick={this.handleDelete.bind(this)}>Delete todo</button>
+      </li>
+    )
+  }
+
+}
 
 export default TodoItem
