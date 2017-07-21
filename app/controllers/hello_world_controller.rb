@@ -5,7 +5,7 @@ class HelloWorldController < ApplicationController
 
   def index
     @hello_world_props = { name: "Stranger" }
-    @m = {text: ["Pratik", "Kamlesh"]}
+    @m = {text: ["React", "Redux"]}
     @todoList = { todos: [{
 	    id: 0,
 	    completed: false,

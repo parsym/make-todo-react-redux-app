@@ -10,7 +10,7 @@ class App extends React.PureComponent {
   render() {
     return (
       <div>
-        <h2>Todo list application built using react/redux</h2>
+        <h4>Todo list application built using react/redux</h4>
         <TodoInput addTodo={this.props.actions.addTodo}/>
         <TodoList actions={this.props.actions} todos={this.props.todos}/>
       </div>

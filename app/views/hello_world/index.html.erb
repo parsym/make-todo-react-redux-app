@@ -1,13 +1,13 @@
 <%= react_component("HelloWorldApp", props: @hello_world_props, prerender: false) %>
 <hr>
-<h2>Array render from controller using react/redux</h2>
+<h4>Array render from controller using react/redux</h4>
 <%= react_component("MessageApp", props: @m ) %>
 <hr>
 <%= react_component("TodoApp", props: @todoList ) %>
 
 <hr>
 
-<h2>This form element is render from rails</h2>
+<h4>This form element is render from rails</h4>
 <%= form_tag('/get_name') do %>
 	<%= text_field_tag 'name' %>
   <%= submit_tag 'Save', class: 'btn btn-primary' %>

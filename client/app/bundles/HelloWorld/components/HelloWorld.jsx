@@ -3,11 +3,10 @@ import React from 'react';
 
 const HelloWorld = ({ name, updateName }) => (
   <div>
-    <h2>This form element is render from react/redux</h2>
-    <h3>
+    <h4>This form element is render from react/redux</h4>
+    <h4>
       Hello, {name}!
-    </h3>
-    <hr />
+    </h4>
     <form >
       <label htmlFor="name">
         Say hello to:
