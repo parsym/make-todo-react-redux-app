@@ -1,6 +1,20 @@
-<h1>Hello World</h1>
 <%= react_component("HelloWorldApp", props: @hello_world_props, prerender: false) %>
-</hr>
+<hr>
+<h2>Array render from controller using react/redux</h2>
 <%= react_component("MessageApp", props: @m ) %>
-</hr>
-<%= react_component("TodoApp") %>
+<hr>
+<%= react_component("TodoApp", props: @todoList ) %>
+
+<hr>
+
+<h2>This form element is render from rails</h2>
+<%= form_tag('/get_name') do %>
+	<%= text_field_tag 'name' %>
+  <%= submit_tag 'Save', class: 'btn btn-primary' %>
+<% end %>
+<hr>
+Custom Js included via asset pipeline.
+check output in browser's console
+<hr>
+
+

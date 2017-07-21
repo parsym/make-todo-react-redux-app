@@ -30,7 +30,7 @@ class TodoInput extends React.PureComponent {
             value={this.state.inputText}
             onChange={this.handleChange.bind(this)}
           />
-          <input type="submit" value="Submit"/>
+          <input type="submit" value="Submit" className="btn btn-primary"/>
         </form>
       </div>
     )

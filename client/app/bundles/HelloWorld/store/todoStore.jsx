@@ -15,12 +15,16 @@ import todoReducer from '../reducers/todoReducer'
   
 // }
 
-const configureStore = (initialState) => (
-  createStore(todoReducer, { todos: [{
-    id: 0,
-    completed: false,
-    text: 'Initial todo for demo purposes'
-  }] })
+const configureStore = (railsProps) => (
+  createStore(todoReducer, railsProps )
 );
+
+// const configureStore = (initialState) => (
+//   createStore(todoReducer, { todos: [{
+//     id: 0,
+//     completed: false,
+//     text: 'Initial todo for demo purposes'
+//   }] })
+// );
 
 export default configureStore;

@@ -14,8 +14,8 @@ class TodoItem extends React.PureComponent {
     return (
       <li>
         <div>{this.props.todo.text}</div>
-        <button onClick={this.handleComplete.bind(this)}>Mark as completed</button>
-        <button onClick={this.handleDelete.bind(this)}>Delete todo</button>
+        <button onClick={this.handleComplete.bind(this)} className='btn btn-success'>Mark as completed</button>
+        <button onClick={this.handleDelete.bind(this)} className='btn btn-warning'>Delete todo</button>
       </li>
     )
   }
